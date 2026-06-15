@@ -1,0 +1,37 @@
+# --- Veri seti (büyük, repoya eklenmez) ---
+data/*
+!data/.gitkeep
+
+# --- Eğitilmiş model dosyaları (büyük) ---
+models/*
+!models/.gitkeep
+
+# --- Kullanıcı yüklemeleri ve üretilen sonuç görselleri ---
+static/uploads/*
+!static/uploads/.gitkeep
+static/results/*
+!static/results/.gitkeep
+
+# --- anomalib eğitim çıktıları ---
+results/
+lightning_logs/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Editör ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Loglar ve geçici geliştirme dosyaları (repoya eklenmez) ---
+*.log
+predict_*.html
+
+# --- Rapor (Word dosyası repoya eklenmez) ---
+*.docx

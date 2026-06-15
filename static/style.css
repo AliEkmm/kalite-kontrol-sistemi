@@ -1,0 +1,24 @@
+/* Basit, sade ek stiller. Görsel düzenin büyük kısmını Bootstrap sağlar. */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+/* Yüklenen ve sonuç görsellerinin aşırı büyümesini engelle */
+.card-body img {
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.badge {
+  letter-spacing: 0.5px;
+}

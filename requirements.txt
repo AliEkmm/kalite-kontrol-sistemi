@@ -1,0 +1,24 @@
+# ============================================================
+# Gerçek Zamanlı Görsel Kalite Kontrol Sistemi - Faz 1
+# Python 3.10 - 3.11 önerilir (anomalib 2.x bu sürümlerde stabildir)
+# Kurulum:  pip install -r requirements.txt
+# ============================================================
+
+# --- Anomali tespit kütüphanesi (PatchCore burada) ---
+# anomalib, PyTorch + Lightning tabanlı hazır modeller sunar.
+# [cpu] eklentisi torch'u CPU sürümüyle kurar (GPU gerektirmez).
+anomalib[cpu]==2.1.0
+
+# --- Derin öğrenme çekirdeği ---
+# anomalib torch'u kendisi çeker; yine de sürümü sabitliyoruz ki
+# kurulum tekrar edilebilir olsun.
+torch==2.7.0
+torchvision==0.22.0
+
+# --- Görüntü işleme ve görselleştirme ---
+opencv-python==4.11.0.86   # ısı haritası bindirme (heatmap overlay)
+pillow==11.2.1             # görüntü yükleme/kaydetme
+matplotlib==3.10.0         # opsiyonel görselleştirme / notebook
+
+# --- Web arayüzü ---
+flask==3.1.0               # basit web sunucusu
